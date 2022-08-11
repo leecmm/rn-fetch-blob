@@ -11,6 +11,10 @@ repositories {
 
 buildscript {
     repositories {
+        maven { url "https://maven.aliyun.com/repository/google" }
+        jcenter{ url "https://maven.aliyun.com/repository/public" }
+        jcenter{ url "https://maven.aliyun.com/repository/central" }
+        jcenter{ url "https://maven.aliyun.com/repository/gradle-plugin" }
         mavenCentral()
         google()
     }
