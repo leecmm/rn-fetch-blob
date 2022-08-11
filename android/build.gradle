@@ -11,24 +11,20 @@ repositories {
 
 buildscript {
     repositories {
-        maven { url "https://maven.aliyun.com/repository/google" }
-        jcenter{ url "https://maven.aliyun.com/repository/public" }
-        jcenter{ url "https://maven.aliyun.com/repository/central" }
-        jcenter{ url "https://maven.aliyun.com/repository/gradle-plugin" }
         mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 30)
+    compileSdkVersion safeExtGet('compileSdkVersion', 28)
     buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
     defaultConfig {
         minSdkVersion safeExtGet('minSdkVersion', 16)
-        targetSdkVersion safeExtGet('targetSdkVersion', 30)
+        targetSdkVersion safeExtGet('targetSdkVersion', 28)
         versionCode 1
         versionName "1.0"
     }
